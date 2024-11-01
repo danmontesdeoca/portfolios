@@ -1,0 +1,66 @@
+/* Reseteo básico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: rgba(34, 33, 31, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+header a i {
+  color: white;
+  font-size: 2.5em;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.5em; /* Espaciado entre los elementos de la lista */
+}
+
+header nav ul li {
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s; /* Efecto suave en el hover */
+}
+
+/* Hover en enlaces del menú */
+header nav ul li:hover {
+  color: #ffd700; /* Cambia a un tono dorado al pasar el cursor */
+}
+/* Asegúrate de que todas las imágenes tienen un tamaño máximo de 680px y están centradas */
+img {
+  display: block;
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
+/* Asegura que los contenedores de imágenes también estén centrados */
+.acerca-imagen,
+.seccion-2 {
+  display: flex;
+  justify-content: center; /* Centra el contenido del contenedor */
+  align-items: center; /* Centra verticalmente si fuera necesario */
+}
